@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation';
+import About from './components/About';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Navigation />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </div>
@@ -20,4 +22,3 @@ function App() {
 }
 
 export default App;
- 
