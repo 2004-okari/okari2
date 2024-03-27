@@ -1,0 +1,97 @@
+.aboutcontainer {
+  padding: 100px 0 100px 0;
+  background-color: red;
+  .aboutcontent {
+    max-width: 420px;
+    width: 94%;
+    margin: 0 auto;
+    background-color: yellow;
+    .abouttitle {
+      margin: 0;
+      font-size: 40px;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+      line-height: 52px;
+      text-align: left;
+    }
+    .abouttext {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+      line-height: 24px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .connectsection {
+      .connecttext {
+        text-align: left;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        line-height: 24px;
+      }
+      .sociallinks {
+        align-self: flex-start;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .linked {
+          list-style: none;
+          .sociallink {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .skillssection {
+    width: 94%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: blue;
+    .accorddetails {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .skilldiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        background-color: aqua;
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 708px) {
+  .aboutcontainer {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px 60px;
+    justify-content: space-between;
+    .aboutcontent {
+      width: 40%;
+      margin: 0;
+    }
+    .skillssection {
+      width: 58%;
+      .accorddetails {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .skilldiv {
+          width: 180px;
+          aspect-ratio: 1;
+          background-color: yellowgreen;
+          
+        }
+      }
+    }
+  }
+}
