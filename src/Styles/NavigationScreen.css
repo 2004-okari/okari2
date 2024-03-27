@@ -65,6 +65,9 @@
       .navigationicon {
         display: none;
       }
+      .modalmenu {
+        display: none;
+      }
     }
   }
 }
