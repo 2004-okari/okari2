@@ -1,0 +1,132 @@
+.portfoliocontainer {
+  background-color: #f5f7f8;
+  .projects {
+    /* max-width: 420px; */
+    .project {
+      background-color: white;
+      width: 94%;
+      margin: 0 auto;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 88px;
+      box-sizing: border-box;
+      box-shadow: 0 0 2px #dfe1e6;
+      border-radius: 16px;
+      &:nth-of-type(1) {
+        margin-top: 60px;
+      }
+      .projectimage {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+      }
+      .projectdetails {
+        width: 100%;
+        .projtext {
+          font-size: 32px;
+          font-weight: 700;
+          color: #172b4d;
+          font-family: 'Poppins', sans-serif;
+          line-height: 40px;
+          margin: 20px 0 12px 0;
+          text-align: left;
+        }
+        .projectmetadata {
+          .projlist {
+            margin: 0 0 12px 0;
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .list {
+              display: flex;
+              flex-direction: row;
+              color: #7a869a;
+              gap: 6px;
+              align-items: center;
+              margin-right: 16px;
+            }
+          }
+        }
+        .projdesc {
+          font-size: 16px;
+          font-weight: 400;
+          color: #344563;
+          font-family: 'Poppins', sans-serif;
+          line-height: 20px;
+          text-align: start;
+        }
+        .projecttags {
+          .projecttaglist {
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            list-style-type: none;
+            flex-wrap: wrap;
+            gap: 8px;
+            .taglist {
+              height: 24px;
+              background-color: #ebebff;
+              font-size: 12px;
+              font-weight: 500;
+              color: #6070ff;
+              font-family: 'Poppins', sans-serif;
+              border-radius: 8px;
+              padding: 4px 12px;
+              text-align: center;
+              display: grid;
+              place-items: center;
+            }
+          }
+        }
+        .projectlink {
+          width: 130px;
+          height: 42px;
+          border: 1px solid #396df2;
+          box-sizing: border-box;
+          border-radius: 8px;
+          display: grid;
+          place-items: center;
+          margin-bottom: 8px;
+          .viewlink {
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            color: #396df2;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfoliocontainer {
+    .projects {
+      .project {
+        width: 82.5%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        column-gap: 30px;
+        .projectimage {
+          box-sizing: content-box;
+          .images {
+            height: 360px;
+          }
+        }
+        .projectdetails {
+          .projtext {
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+  }
+}
