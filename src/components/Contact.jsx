@@ -30,7 +30,7 @@ const Contact = () => {
       "Thank you for reaching out. We'll get back to you as soon as possible",
       {
         type: 'success',
-      }
+      },
     );
   };
 
@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contactcontent">
-        <div className='contactform'>
+        <div className="contactform">
           <h2 className="contacttitle">Contact Me</h2>
           <p className="contacttext">
             If you have an application you are interested in developing, a
