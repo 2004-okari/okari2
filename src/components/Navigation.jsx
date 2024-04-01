@@ -3,6 +3,7 @@ import { IoMenuOutline } from 'react-icons/io5';
 import '../Styles/NavigationScreen.css';
 import Modal from '@mui/material/Modal';
 import { NavLink } from 'react-router-dom';
+import { Menu } from '@mui/icons-material';
 
 const Navigation = () => {
   const [open, setOpen] = React.useState(false);
@@ -35,11 +36,11 @@ const Navigation = () => {
           </ul>
         </div>
         {open === false ? (
-          <IoMenuOutline onClick={toggleMenu} className="navigationicon" />
+          <Menu onClick={toggleMenu} className="navigationicon" />
         ) : null}
         <Modal className="modalmenu" open={open}>
           <div>
-            <IoMenuOutline onClick={toggleMenu} />
+            <Menu onClick={toggleMenu} />
             <ul className="navigationlist">
               <li className="navigationitem">
                 <NavLink className="link" to="/">
