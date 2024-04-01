@@ -18,7 +18,9 @@ const LoadingScreen = () => {
         {/* Your loading animation goes here */}
       </div>
       <div className="loading-text">
-        Loading... <br />
+        Loading...
+        {' '}
+        <br />
         Okari Nyandika
       </div>
     </div>
