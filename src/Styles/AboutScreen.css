@@ -1,11 +1,13 @@
 .aboutcontainer {
   padding: 80px 0 60px 0;
   background-color: #fff;
+
   .aboutcontent {
     max-width: 420px;
     width: 90%;
     margin: 0 auto 42px auto;
     padding: 0 6px;
+
     .abouttitle {
       margin: 0;
       font-size: 40px;
@@ -15,6 +17,7 @@
       text-align: left;
       color: #091e42;
     }
+
     .abouttext {
       font-size: 16px;
       font-weight: 400;
@@ -25,6 +28,7 @@
       text-align: left;
       color: #344563;
     }
+
     .connectsection {
       .connecttext {
         text-align: left;
@@ -34,6 +38,7 @@
         line-height: 24px;
         color: #7f8cff;
       }
+
       .sociallinks {
         align-self: flex-start;
         display: flex;
@@ -44,6 +49,7 @@
         .linked {
           margin-right: 14px;
           list-style: none;
+
           .sociallink {
             text-decoration: none;
           }
@@ -51,18 +57,22 @@
       }
     }
   }
+
   .skillssection {
     width: 90%;
     max-width: 420px;
     margin: 0 auto;
+
     .accord {
       border: none;
       box-shadow: none;
+
       .accorddetails {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 0 6px;
+
         .skilldiv {
           display: flex;
           flex-direction: row;
@@ -72,11 +82,13 @@
           background-color: #f7f7f9;
           margin-bottom: 8px;
           padding: 6px;
+
           .image {
             margin-right: 8px;
             height: 48px;
             aspect-ratio: 1;
           }
+
           .textname {
             font-size: 18px;
             font-family: 'Poppins', sans-serif;
@@ -96,17 +108,21 @@
     box-sizing: border-box;
     align-items: flex-start;
     padding: 40px 60px;
+
     .aboutcontent {
       margin: 0;
     }
+
     .skillssection {
       width: 100%;
+
       .accord {
         .accorddetails {
           display: flex;
           flex-direction: row;
           align-items: center;
           overflow: scroll;
+
           .skilldiv {
             display: flex;
             flex-direction: column;
