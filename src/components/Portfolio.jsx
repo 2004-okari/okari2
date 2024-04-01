@@ -70,18 +70,13 @@ const data = [
 const Portfolio = () => (
   <div className="portfoliocontainer">
     <div className="projects">
-      {data &&
-        data.map((item) => (
+      {data
+        && data.map((item) => (
           <div className="project" key={item.id}>
             <div className="projectimage">
               <img
                 className="images"
-                style={{
-                  objectFit: 'cover',
-                  width: '100%',
-                  height: '100%',
-                  borderRadius: '8px',
-                }}
+
                 src={item.image}
                 alt={item.title}
               />
@@ -92,16 +87,18 @@ const Portfolio = () => (
               <div className="projectmetadata">
                 <ul className="projlist">
                   <li className="list">
-                    <IoRadioButtonOnOutline color="#7A869A" size={10} />{' '}
+                    <IoRadioButtonOnOutline color="#7A869A" size={10} />
+                    {' '}
                     {item.category}
                   </li>
                   <li className="list">
-                    <IoRadioButtonOnOutline color="#7A869A" size={10} />{' '}
+                    <IoRadioButtonOnOutline color="#7A869A" size={10} />
+                    {' '}
                     {item.year}
                   </li>
                 </ul>
               </div>
-              <p className="projdesc">{item.description.slice(0, 120)}</p>
+              <p className="projdesc">{item.description.slice(0, 100)}</p>
               <div className="projecttags">
                 <ul className="projecttaglist">
                   {item.tags.map((tag, index) => (
