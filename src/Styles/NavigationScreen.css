@@ -5,6 +5,8 @@
   width: 100vw;
   height: 58px;
   background-color: transparent !important;
+  position: fixed;
+  z-index: 99;
 
   .navigationcontent {
     display: flex;
@@ -20,6 +22,7 @@
       font-size: 30px;
       font-weight: 600;
       font-family: 'Simonetta', sans-serif;
+      mix-blend-mode: difference;
       &:hover {
         cursor: pointer;
         font-family: 'Libre Barcode 128 Text', sans-serif;
