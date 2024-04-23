@@ -3,6 +3,7 @@ import Introduction from './Introduction';
 import Portfolio from './Portfolio';
 import About from './About';
 import Navigation from './Navigation';
+import Contact from './Contact';
 
 const Home = () => (
   <>
@@ -10,6 +11,7 @@ const Home = () => (
     <Introduction />
     <Portfolio />
     <About />
+    <Contact />
   </>
 );
 
