@@ -9,7 +9,13 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        maxWidth: '1500px',
+        margin: '0 auto',
+      }}
+    >
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
