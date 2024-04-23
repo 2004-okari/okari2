@@ -79,15 +79,8 @@
     .introductioncontent {
       width: 96%;
       height: 90%;
-      padding: 8% 20% 0 15%;
-      .connnectsection {
-        .sociallinks {
-          .linked {
-            .sociallink {
-            }
-          }
-        }
-      }
+      padding: 2% 20% 0 15%;
+
     }
   }
 }
