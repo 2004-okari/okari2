@@ -3,6 +3,7 @@
 
   .projects {
     /* max-width: 420px; */
+    padding: 60px 0 0 0;
     .project {
       background-color: white;
       width: 94%;
@@ -15,10 +16,6 @@
       box-sizing: border-box;
       box-shadow: 0 0 2px #dfe1e6;
       border-radius: 16px;
-
-      &:nth-of-type(1) {
-        margin-top: 60px;
-      }
 
       .projectimage {
         width: 100%;
@@ -56,14 +53,8 @@
 
             .list {
               display: flex;
-              font-family:
-                'Lucida Sans',
-                'Lucida Sans Regular',
-                'Lucida Grande',
-                'Lucida Sans Unicode',
-                Geneva,
-                Verdana,
-                sans-serif;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
               flex-direction: row;
               color: #7a869a;
               gap: 6px;
@@ -132,6 +123,128 @@
   }
 }
 
+.mmodal {
+  display: grid;
+  place-items: center;
+  padding: 20px 0;
+  overflow: scroll;
+  .modalcontent {
+    .mproject {
+      width: 92%;
+      padding: 2px 6px 14px 6px;
+      margin: 0 auto;
+      border: 1px solid #dfe1e6;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: scroll;
+      .mprojectdetails {
+        .mprojecttitle {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          .mprojtext {
+            font-size: 32px;
+            font-weight: 700;
+            color: #172b4d;
+            font-family: 'Poppins', sans-serif;
+            line-height: 40px;
+            margin: 20px 0 12px 0;
+            text-align: left;
+          }
+        }
+        .mprojectmetadata {
+          .mprojlist {
+            margin: 0 0 12px 0;
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .mlist {
+              display: flex;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              flex-direction: row;
+              color: #7a869a;
+              gap: 6px;
+              align-items: center;
+              margin-right: 16px;
+            }
+          }
+        }
+        .divsec {
+          .mprojectimage {
+            width: 100%;
+
+            .mimages {
+              width: 100%;
+              height: 220px;
+              object-fit: cover;
+              border-radius: 16px;
+            }
+          }
+          .divsec2 {
+            .mprojdesc {
+              font-size: 16px;
+              font-weight: 400;
+              color: #344563;
+              font-family: 'Poppins', sans-serif;
+              line-height: 24px;
+              text-align: start;
+            }
+            .mprojecttags {
+              .mprojecttaglist {
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: center;
+                list-style-type: none;
+                flex-wrap: wrap;
+                gap: 8px;
+
+                .mtaglist {
+                  height: 24px;
+                  background-color: #ebebff;
+                  font-size: 12px;
+                  font-weight: 500;
+                  color: #6070ff;
+                  font-family: 'Poppins', sans-serif;
+                  border-radius: 8px;
+                  padding: 4px 12px;
+                  text-align: center;
+                  display: grid;
+                  place-items: center;
+                }
+              }
+            }
+            .mbutton {
+              width: 200px;
+              height: 48px;
+              padding: 2px 4px;
+              border: 1px solid #396df2;
+              background-color: #fff;
+              border-radius: 8px;
+              .mprojectlink {
+                height: 100%;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 778px) {
   .portfoliocontainer {
     .projects {
@@ -149,7 +262,7 @@
         .projectimage {
           box-sizing: content-box;
           padding: 60px 0;
-          background-color: yellow;
+          background-color: #ebebff;
 
           .images {
             width: 98%;
@@ -157,6 +270,32 @@
         }
 
         .projectdetails {
+        }
+      }
+    }
+  }
+
+  .mmodal {
+    .modalcontent {
+      .mproject {
+        .mprojectdetails {
+          .divsec {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 20px;
+
+            .mprojectimage {
+
+              .mimages {
+                height: 400px;
+              }
+            }
+
+            .divsec2 {
+              width: 50%;
+            }
+          }
         }
       }
     }
