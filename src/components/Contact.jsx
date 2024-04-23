@@ -11,6 +11,7 @@ import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { Button, TextField } from '@mui/material';
 import '../Styles/ContactScreen.css';
+import Input from 'rc-input';
 
 const validationSchema = yup.object({
   email: yup
@@ -30,7 +31,7 @@ const Contact = () => {
       "Thank you for reaching out. We'll get back to you as soon as possible",
       {
         type: 'success',
-      },
+      }
     );
   };
 
@@ -54,43 +55,42 @@ const Contact = () => {
             to help with it!
           </p>
           <form onSubmit={handleSubmit} className="formcontainer">
-            <TextField
+            <Input
               className="forminput"
-              variant="outlined"
               id="name"
               name="name"
-              label="Name"
+              placeholder="Name"
               value={formik.values.name}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              error={formik.touched.name && Boolean(formik.errors.name)}
-              helperText={formik.touched.name && formik.errors.name}
+              // error={formik.touched.name && Boolean(formik.errors.name)}
+              // helperText={formik.touched.name && formik.errors.name}
             />
-            <TextField
+            <Input
               className="forminput"
-              variant="outlined"
               id="email"
               name="email"
-              label="Email"
+              placeholder="Email"
               value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              error={formik.touched.email && Boolean(formik.errors.email)}
-              helperText={formik.touched.email && formik.errors.email}
+              // error={formik.touched.email && Boolean(formik.errors.email)}
+              // helperText={formik.touched.email && formik.errors.email}
             />
-            <TextField
+            <Input
+              type="textarea"
               className="forminput"
-              variant="outlined"
               id="message"
               name="message"
-              label="Message"
+              placeholder="Message"
               value={formik.values.message}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              error={formik.touched.message && Boolean(formik.errors.message)}
-              helperText={formik.touched.message && formik.errors.message}
+              // error={formik.touched.message && Boolean(formik.errors.message)}
+              // helperText={formik.touched.message && formik.errors.message}
               multiline
               rows={4}
+              style={{ backgroundColor: 'white' }}
             />
             <Button
               className="submit-button"
@@ -98,7 +98,7 @@ const Contact = () => {
               variant="contained"
               fullWidth
               type="submit"
-              disabled={state.submitting}
+              // disabled={state.sen}
               onClick={() => {
                 setSending(true);
                 setTimeout(() => {
@@ -108,7 +108,7 @@ const Contact = () => {
                 }, 2000);
               }}
             >
-              {sending ? 'SENDING...' : 'CONTACT US'}
+              {sending ? 'Sending...' : 'Contact Us'}
             </Button>
           </form>
         </div>
