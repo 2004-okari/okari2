@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ian from '../assets/images/ian.jpg';
 import '../Styles/PortfolioScreen.css';
 import {
   IoRadioButtonOnOutline,
@@ -7,6 +6,11 @@ import {
   IoGlobeOutline,
 } from 'react-icons/io5';
 import Modal from '@mui/material/Modal';
+import calculator from '../assets/images/calculator.jpg';
+import todo from '../assets/images/todo.jpg';
+import leaderboard from '../assets/images/leaderboard.jpg';
+import summit from '../assets/images/summit.jpg';
+import footbal from '../assets/images/footbal.jpg';
 
 const Portfolio = () => {
   const [open, setOpen] = useState(false);
@@ -24,26 +28,85 @@ const Portfolio = () => {
   const data = [
     {
       id: 1,
-      title: 'Project 1',
-      category: 'Mobile App Dev',
-      year: '2022',
-      image: ian,
+      title: 'Math Magicians',
+      category: 'Web App Dev',
+      year: '2023',
+      image: calculator,
       description:
-        'Lorem ipsum dolor sit amet tempor incid idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet tempor incid idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      tags: ['react', 'react-router', 'styled', 'components'],
-      link: '',
+        'Math Magicians is not just your ordinary calculator app; it&apos;s a versatile and multi-functional tool that simplifies your everyday calculations and offers a dose of inspiration along the way. With multiple pages, including Home, Calculator, and Quote Generator, Math Magicians transforms your math-solving routine into an uplifting and productive experience.',
+      tags: ['react', 'react-router', 'APIs', 'redux'],
+      link: 'https://magician-math.netlify.app/',
     },
     {
       id: 2,
-      title: 'Project 2',
-      category: 'Web Development',
+      title: 'Interstellar',
+      category: 'Web App Development',
       year: '2023',
-      image: ian,
-      description: '',
-      tags: ['html', 'css', 'javascript', 'bootstrap'],
+      image: calculator,
+      description: 'Embark on an interstellar journey with SpaceXplorer, a cutting-edge React application that lets you explore the cosmos like never before. SpaceXplorer is your ultimate portal for discovering spaceships, joining space missions, and booking seats for the adventure of a lifetime. Whether you're a space enthusiast, aspiring astronaut, or curious traveller, SpaceXplorer turns your dreams of space exploration into reality.',
+      tags: ['react', 'redux', 'APIs', 'bootstrap'],
+      link: 'https://sprightly-gaufre-7108e7.netlify.app/',
+    },
+    {
+      id: 3,
+      title: 'Easytask',
+      category: 'Website',
+      year: '2023',
+      image: todo,
+      description: 'Introducing EasyTask, your go-to web app for simplifying your daily tasks and boosting productivity. EasyTask is a straightforward and user-friendly to-do list application designed to help you stay organized and on top of your goals, whether it's managing work assignments, personal chores, or planning projects.',
+      tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
       link: '',
     },
-    // Add more data objects as needed
+    {
+      id: 4,
+      title: 'Leaderboard',
+      category: 'Website',
+      year: '2023',
+      image: leaderboard,
+      description: 'Introducing Leaderboard, your go-to leaderboard for storing and tracking player scores in a variety of games and competitions. Whether you're hosting a gaming tournament, managing sports leagues, or simply tracking scores for friendly competitions, Leaderboard makes scorekeeping effortless and fun. With Leaderboard's intuitive design and user-friendly features, you can keep tabs on scores and rankings with ease.',
+      tags: ['HTML', 'CSS', 'JavaScript', 'local storage'],
+      link: '',
+    },
+    {
+      id: 5,
+      title: 'DevSummit website',
+      category: 'Website',
+      year: '2023',
+      image: summit,
+      description: 'Welcome to the DevSummit Hub, your all-in-one landing page designed exclusively for the Developer's Summit! Whether you're a seasoned developer, a tech enthusiast, or a first-time attendee, DevSummit Hub is your digital gateway to a world of learning, networking, and innovation.',
+      tags: ['HTML', 'CSS', 'JavaScript', 'Responsive design'],
+      link: '',
+    },
+    {
+      id: 6,
+      title: 'portfolio template',
+      category: 'Website',
+      year: '2023',
+      image: todo,
+      description: 'Welcome to the online portfolio showcase of X, where creativity, innovation, and expertise converge. This dynamic website is your gateway to a comprehensive display of X's professional journey, achievements, and creative works. Whether you're a potential employer, client, or simply an admirer of exceptional talent, this portfolio website offers a glimpse into the world of X.',
+      tags: ['Front-end development', 'Responsive Design'],
+      link: '',
+    },
+    {
+      id: 7,
+      title: 'TipPal',
+      category: 'Web App Development',
+      year: '2023',
+      image: todo,
+      description: 'Welcome to TipPal, your ultimate tip calculator for every occasion. Whether you’re dining out, splitting the bill, or tipping for exceptional service, TipPal makes tipping a breeze. With its intuitive design, user-friendly interface, and customizable features, TipPal ensures that you tip right every time.',
+      tags: ['Front-end development', 'Responsive Design'],
+      link: '',
+    },
+    {
+      id: 8,
+      title: 'sportySB',
+      category: 'Web App Development',
+      year: '2023',
+      image: footbal,
+      description: 'Introducing SportySB Stats Tracker, the ultimate web app for sports enthusiasts, coaches, and teams. SportySB Stats Tracker harnesses the power of the SportySB API to provide real-time sports statistics and insights, making it easier than ever to analyze and improve performance. Whether you're a coach seeking data-driven strategies or a sports fan tracking your favorite team, SportySB Stats Tracker is your all-in-one sports data companion.',
+      tags: ['react', 'redux', 'APIs', 'Responsive Design'],
+      link: '',
+    }
   ];
 
   return (
@@ -69,7 +132,9 @@ const Portfolio = () => {
                     </li>
                   </ul>
                 </div>
-                <p className="projdesc">{item.description.slice(0, 100)}</p>
+                <p className="projdesc">
+                  {item.description.slice(0, 100).padEnd(103, '...')}
+                </p>
                 <div className="projecttags">
                   <ul className="projecttaglist">
                     {item.tags.map((tag, index) => (
