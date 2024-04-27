@@ -278,6 +278,9 @@
   .mmodal {
     .modalcontent {
       .mproject {
+        width: 84%;
+        overflow: hidden;
+        padding: 12px;
         .mprojectdetails {
           .divsec {
             display: flex;
