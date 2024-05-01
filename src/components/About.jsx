@@ -126,7 +126,7 @@ const About = () => {
           Aliquam quod repudiandae omnis.
         </p>
         <div className="connectsection">
-          <p className="connecttext">LET'S CONNECT</p>
+          <p className="connecttext">LET&apos;S CONNECT</p>
           <ul className="sociallinks">
             <li className="linked">
               <a href="/" className="sociallink">
