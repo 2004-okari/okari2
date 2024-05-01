@@ -5,6 +5,7 @@
   height: 562px;
   display: grid;
   place-items: center;
+
   .introductioncontent {
     display: flex;
     flex-direction: column;
@@ -18,16 +19,18 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+
     .introductiontitle {
       font-size: 40px;
       font-weight: 700;
-      color: #000;
       font-family: 'Poppins', sans-serif;
       line-height: 52px;
+
       /* margin: 0; */
       color: #172b4d;
       text-align: left;
       margin-bottom: 0;
+
       .span {
         text-decoration: highlight;
         font-size: 32px;
@@ -36,6 +39,7 @@
         padding: 0 4px;
       }
     }
+
     .introductiontext {
       text-align: left;
       color: #344563;
@@ -54,6 +58,7 @@
         color: #7f8cff;
         letter-spacing: 1px;
       }
+
       .sociallinks {
         list-style: none;
         display: flex;
@@ -62,8 +67,10 @@
         margin-right: 14px;
         padding: 0;
         margin-top: 8px;
+
         .linked {
           margin-right: 14px;
+
           .sociallink {
             text-decoration: none;
           }
@@ -76,11 +83,11 @@
 @media screen and (min-width: 768px) {
   .introductioncontainer {
     height: 680px;
+
     .introductioncontent {
       width: 96%;
       height: 90%;
       padding: 2% 20% 0 15%;
-
     }
   }
 }
