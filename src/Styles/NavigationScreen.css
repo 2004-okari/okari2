@@ -23,6 +23,7 @@
       font-weight: 600;
       font-family: 'Simonetta', sans-serif;
       mix-blend-mode: difference;
+
       &:hover {
         cursor: pointer;
         font-family: 'Libre Barcode 128 Text', sans-serif;
