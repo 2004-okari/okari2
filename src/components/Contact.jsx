@@ -1,15 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import {
-  IoLogoWhatsapp,
-  IoLogoInstagram,
-  IoLogoTwitter,
-} from 'react-icons/io5';
+import React, { useState } from 'react';
 import { useForm } from '@formspree/react';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
-import { Button, TextField } from '@mui/material';
+import { Button } from '@mui/material';
 import '../Styles/ContactScreen.css';
 import Input from 'rc-input';
 
@@ -31,7 +26,7 @@ const Contact = () => {
       "Thank you for reaching out. We'll get back to you as soon as possible",
       {
         type: 'success',
-      }
+      },
     );
   };
 
@@ -99,6 +94,7 @@ const Contact = () => {
               fullWidth
               type="submit"
               // disabled={state.sen}
+              disabled={state}
               onClick={() => {
                 setSending(true);
                 setTimeout(() => {
