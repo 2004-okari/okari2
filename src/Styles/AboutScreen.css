@@ -86,7 +86,7 @@
           .image {
             margin-right: 8px;
             height: 48px;
-            aspect-ratio: 1;
+            aspect-ratio: 1/1;
           }
 
           .textname {
