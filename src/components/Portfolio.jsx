@@ -10,7 +10,6 @@ import calculator from '../assets/images/calculator.jpg';
 import todo from '../assets/images/todo.jpg';
 import leaderboard from '../assets/images/leaderboard.jpg';
 import summit from '../assets/images/summit.jpg';
-import footbal from '../assets/images/footbal.jpg';
 import space from '../assets/images/space.jpg';
 import tipcalculator from '../assets/images/tipcalculator.jpg';
 import portfolio from '../assets/images/portfolio.png';
@@ -122,11 +121,13 @@ const Portfolio = () => {
                 <div className="projectmetadata">
                   <ul className="projlist">
                     <li className="list">
-                      <IoRadioButtonOnOutline color="#7A869A" size={10} />{' '}
+                      <IoRadioButtonOnOutline color="#7A869A" size={10} />
+                      {' '}
                       {item.category}
                     </li>
                     <li className="list">
-                      <IoRadioButtonOnOutline color="#7A869A" size={10} />{' '}
+                      <IoRadioButtonOnOutline color="#7A869A" size={10} />
+                      {' '}
                       {item.year}
                     </li>
                   </ul>
@@ -136,8 +137,8 @@ const Portfolio = () => {
                 </p>
                 <div className="projecttags">
                   <ul className="projecttaglist">
-                    {item.tags.map((tag, index) => (
-                      <li className="taglist" key={index}>
+                    {item.tags.map((tag) => (
+                      <li className="taglist" key={tag}>
                         {tag}
                       </li>
                     ))}
@@ -167,11 +168,13 @@ const Portfolio = () => {
                 <div className="mprojectmetadata">
                   <ul className="mprojlist">
                     <li className="mlist">
-                      <IoRadioButtonOnOutline color="#7A869A" size={10} />{' '}
+                      <IoRadioButtonOnOutline color="#7A869A" size={10} />
+                      {' '}
                       {selectedItem.category}
                     </li>
                     <li className="mlist">
-                      <IoRadioButtonOnOutline color="#7A869A" size={10} />{' '}
+                      <IoRadioButtonOnOutline color="#7A869A" size={10} />
+                      {' '}
                       {selectedItem.year}
                     </li>
                   </ul>
@@ -188,8 +191,8 @@ const Portfolio = () => {
                     <p className="mprojdesc">{selectedItem.description}</p>
                     <div className="mprojecttags">
                       <ul className="mprojecttaglist">
-                        {selectedItem.tags.map((tag, index) => (
-                          <li className="mtaglist" key={index}>
+                        {selectedItem.tags.map((tag) => (
+                          <li className="mtaglist" key={tag}>
                             {tag}
                           </li>
                         ))}
