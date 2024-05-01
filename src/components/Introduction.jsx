@@ -11,12 +11,15 @@ const Introduction = () => (
   <div className="introductioncontainer">
     <div className="introductioncontent">
       <h2 className="introductiontitle">
-        I'm <span className="span"> Okari Nyandika </span>
+        I&apos;m
+        {' '}
+        <span className="span"> Okari Nyandika </span>
         <br />
         Glad to see you!
       </h2>
       <p className="introductiontext">
-        I'm a{' '}
+        I&apos;m a
+        {' '}
         <span
           style={{
             fontWeight: 'bold',
@@ -26,10 +29,10 @@ const Introduction = () => (
         </span>
         . I can help you build a mobile app, website or product. Look through
         some of my work and experience. If you like what you see and have a
-        project you need coded, don't hesitate to contact me.
+        project you need coded, don&apos;t hesitate to contact me.
       </p>
       <div className="connectsection">
-        <p className="connecttext">LET'S CONNECT</p>
+        <p className="connecttext">LET&apos;S CONNECT</p>
         <ul className="sociallinks">
           <li className="linked">
             <a href="/" className="sociallink">
