@@ -4,6 +4,7 @@
   .projects {
     /* max-width: 420px; */
     padding: 60px 0 0 0;
+
     .project {
       background-color: white;
       width: 94%;
@@ -53,8 +54,14 @@
 
             .list {
               display: flex;
-              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              font-family:
+                'Lucida Sans',
+                'Lucida Sans Regular',
+                'Lucida Grande',
+                'Lucida Sans Unicode',
+                Geneva,
+                Verdana,
+                sans-serif;
               flex-direction: row;
               color: #7a869a;
               gap: 6px;
@@ -128,6 +135,7 @@
   place-items: center;
   padding: 20px 0;
   overflow: scroll;
+
   .modalcontent {
     .mproject {
       width: 92%;
@@ -137,6 +145,7 @@
       background-color: #fff;
       border-radius: 8px;
       overflow: scroll;
+
       .mprojectdetails {
         .mprojecttitle {
           display: flex;
@@ -154,6 +163,7 @@
             text-align: left;
           }
         }
+
         .mprojectmetadata {
           .mprojlist {
             margin: 0 0 12px 0;
@@ -165,8 +175,14 @@
 
             .mlist {
               display: flex;
-              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              font-family:
+                'Lucida Sans',
+                'Lucida Sans Regular',
+                'Lucida Grande',
+                'Lucida Sans Unicode',
+                Geneva,
+                Verdana,
+                sans-serif;
               flex-direction: row;
               color: #7a869a;
               gap: 6px;
@@ -175,6 +191,7 @@
             }
           }
         }
+
         .divsec {
           .mprojectimage {
             width: 100%;
@@ -186,6 +203,7 @@
               border-radius: 16px;
             }
           }
+
           .divsec2 {
             .mprojdesc {
               font-size: 16px;
@@ -195,6 +213,7 @@
               line-height: 24px;
               text-align: start;
             }
+
             .mprojecttags {
               .mprojecttaglist {
                 padding: 0;
@@ -221,6 +240,7 @@
                 }
               }
             }
+
             .mbutton {
               width: 200px;
               height: 48px;
@@ -228,6 +248,7 @@
               border: 1px solid #396df2;
               background-color: #fff;
               border-radius: 8px;
+
               .mprojectlink {
                 height: 100%;
                 text-decoration: none;
@@ -268,9 +289,6 @@
             width: 98%;
           }
         }
-
-        .projectdetails {
-        }
       }
     }
   }
@@ -281,6 +299,7 @@
         width: 84%;
         overflow: hidden;
         padding: 12px;
+
         .mprojectdetails {
           .divsec {
             display: flex;
@@ -289,7 +308,6 @@
             gap: 20px;
 
             .mprojectimage {
-
               .mimages {
                 height: 400px;
               }
