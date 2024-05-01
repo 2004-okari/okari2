@@ -7,7 +7,6 @@ import {
 } from 'react-icons/io5';
 import Modal from '@mui/material/Modal';
 import calculator from '../assets/images/calculator.jpg';
-import todo from '../assets/images/todo.jpg';
 import leaderboard from '../assets/images/leaderboard.jpg';
 import summit from '../assets/images/summit.jpg';
 import space from '../assets/images/space.jpg';
@@ -66,7 +65,7 @@ const Portfolio = () => {
       title: 'Easytask',
       category: 'Website',
       year: '2023',
-      image: todo,
+      image: leaderboard,
       description:
         'Introducing EasyTask, your go-to web app for simplifying your daily tasks and boosting productivity. EasyTask is a straightforward and user-friendly to-do list application designed to help you stay organized and on top of your goals, whether it&apos;s managing work assignments, personal chores, or planning projects.',
       tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
