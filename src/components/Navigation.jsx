@@ -1,5 +1,5 @@
 import React from 'react';
-import { IoMenuOutline, IoCloseOutline } from 'react-icons/io5';
+import { IoCloseOutline } from 'react-icons/io5';
 import '../Styles/NavigationScreen.css';
 import Modal from '@mui/material/Modal';
 import { NavLink } from 'react-router-dom';
