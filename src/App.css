@@ -1,5 +1,5 @@
-.App {
-  text-align: center;
-}
 
-/* Add custom curso */
+/* add custom cursor */
+.App {
+  cursor: url('./assets/images/cursintro.png'), auto;
+}
