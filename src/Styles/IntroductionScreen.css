@@ -5,6 +5,8 @@
   height: 582px;
   display: grid;
   place-items: center;
+  cursor: url('../assets/images/cursintro.png'), auto;
+
 
   .introductioncontent {
     display: flex;
