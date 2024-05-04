@@ -6,20 +6,34 @@ import {
 } from 'react-icons/io5';
 import EmailIcon from '@mui/icons-material/Email';
 import '../Styles/IntroductionScreen.css';
+import { TypeAnimation } from 'react-type-animation';
 
 const Introduction = () => (
   <div className="introductioncontainer">
     <div className="introductioncontent">
       <h2 className="introductiontitle">
-        I&apos;m
-        {' '}
-        <span className="span"> Okari Nyandika </span>
+        I&apos;m{' '}
+        <span className="span">
+          {' '}
+          <TypeAnimation
+            sequence={[
+              'Okari Nyandika',
+              500,
+              'Okari Rooney',
+              500,
+              'a Full-stack developer',
+              500,
+              'a Mobile developer',
+              500,
+            ]}
+            repeat={Infinity}
+          />{' '}
+        </span>
         <br />
         Glad to see you!
       </h2>
       <p className="introductiontext">
-        I&apos;m a
-        {' '}
+        I&apos;m a{' '}
         <span
           style={{
             fontWeight: 'bold',
