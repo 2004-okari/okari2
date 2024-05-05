@@ -12,7 +12,8 @@ const Introduction = () => (
   <div className="introductioncontainer">
     <div className="introductioncontent">
       <h2 className="introductiontitle">
-        I&apos;m{' '}
+        I&apos;m
+        {' '}
         <span className="span">
           {' '}
           <TypeAnimation
@@ -27,13 +28,15 @@ const Introduction = () => (
               500,
             ]}
             repeat={Infinity}
-          />{' '}
+          />
+          {' '}
         </span>
         <br />
         Glad to see you!
       </h2>
       <p className="introductiontext">
-        I&apos;m a{' '}
+        I&apos;m a
+        {' '}
         <span
           style={{
             fontWeight: 'bold',
@@ -49,17 +52,20 @@ const Introduction = () => (
         <p className="connecttext">LET&apos;S CONNECT</p>
         <ul className="sociallinks">
           <li className="linked">
-            <a href="/" className="sociallink">
+            <a href="https://twitter.com/OkariRooney" className="sociallink">
               <IoLogoInstagram color="#505F79" size={24} />
             </a>
           </li>
           <li className="linked">
-            <a href="/" className="sociallink">
+            <a
+              href="https://www.instagram.com/okari.rooney.nyandika/"
+              className="sociallink"
+            >
               <IoLogoTwitter color="#505F79" size={24} />
             </a>
           </li>
           <li className="linked">
-            <a href="/" className="sociallink">
+            <a href="mailto:nyandika15@icloud.com" className="sociallink">
               <EmailIcon
                 size={24}
                 style={{
@@ -69,7 +75,10 @@ const Introduction = () => (
             </a>
           </li>
           <li className="linked">
-            <a href="/" className="sociallink">
+            <a
+              href="https://api.whatsapp.com/send?phone=+254794152249"
+              className="sociallink"
+            >
               <IoLogoWhatsapp color="#505F79" size={24} />
             </a>
           </li>
