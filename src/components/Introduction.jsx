@@ -52,20 +52,32 @@ const Introduction = () => (
         <p className="connecttext">LET&apos;S CONNECT</p>
         <ul className="sociallinks">
           <li className="linked">
-            <a href="https://twitter.com/OkariRooney" className="sociallink">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/okari.rooney.nyandika/"
+              className="sociallink"
+            >
               <IoLogoInstagram color="#505F79" size={24} />
             </a>
           </li>
           <li className="linked">
             <a
-              href="https://www.instagram.com/okari.rooney.nyandika/"
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/OkariRooney"
               className="sociallink"
             >
               <IoLogoTwitter color="#505F79" size={24} />
             </a>
           </li>
           <li className="linked">
-            <a href="mailto:nyandika15@icloud.com" className="sociallink">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="mailto:nyandika15@icloud.com"
+              className="sociallink"
+            >
               <EmailIcon
                 size={24}
                 style={{
@@ -76,7 +88,9 @@ const Introduction = () => (
           </li>
           <li className="linked">
             <a
-              href="https://api.whatsapp.com/send?phone=+254794152249"
+              target="_blank"
+              rel="noreferrer"
+              href="https://api.whatsapp.com/send?phone=0794152249"
               className="sociallink"
             >
               <IoLogoWhatsapp color="#505F79" size={24} />
