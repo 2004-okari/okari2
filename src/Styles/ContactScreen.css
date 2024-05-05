@@ -81,6 +81,14 @@
         }
       }
 
+      .error {
+        text-align: left;
+        color: red;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 4px;
+        margin-bottom: 0;
+      }
+
       .submit-button {
         width: 150px;
         background-color: #fff;
