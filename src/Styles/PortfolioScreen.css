@@ -28,6 +28,7 @@
           height: 100%;
           object-fit: cover;
           border-radius: 8px;
+
           &:hover {
             background-color: dodgerblue;
             opacity: 0.7;
@@ -60,8 +61,14 @@
 
             .list {
               display: flex;
-              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              font-family:
+                'Lucida Sans',
+                'Lucida Sans Regular',
+                'Lucida Grande',
+                'Lucida Sans Unicode',
+                Geneva,
+                Verdana,
+                sans-serif;
               flex-direction: row;
               color: #7a869a;
               gap: 6px;
@@ -117,10 +124,12 @@
           place-items: center;
           margin-bottom: 8px;
           background: white;
+
           &:hover {
             color: #fff;
             background-color: #4053fc;
           }
+
           &:active {
             color: #fff;
             background-color: #2230d2;
@@ -183,8 +192,14 @@
 
             .mlist {
               display: flex;
-              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              font-family:
+                'Lucida Sans',
+                'Lucida Sans Regular',
+                'Lucida Grande',
+                'Lucida Sans Unicode',
+                Geneva,
+                Verdana,
+                sans-serif;
               flex-direction: row;
               color: #7a869a;
               gap: 6px;
@@ -250,10 +265,12 @@
               border: 1px solid #396df2;
               background-color: #fff;
               border-radius: 8px;
+
               &:hover {
                 color: #fff;
                 background-color: #4053fc;
               }
+
               &:active {
                 color: #fff;
                 background-color: #2230d2;
