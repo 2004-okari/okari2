@@ -7,7 +7,6 @@
   place-items: center;
   cursor: url('../assets/images/cursintro.png'), auto;
 
-
   .introductioncontent {
     display: flex;
     flex-direction: column;
