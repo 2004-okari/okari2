@@ -10,6 +10,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
+import { TypeAnimation } from 'react-type-animation';
 import ruby from '../assets/images/ruby.png';
 import javascript from '../assets/images/java-script.png';
 import html from '../assets/images/html-5.png';
@@ -96,16 +97,6 @@ const about = {
       name: 'Sass',
       image: sass,
     },
-    {
-      id: 6,
-      name: 'Firebase',
-      image: 'vintage',
-    },
-    {
-      id: 7,
-      name: 'Firebase',
-      image: 'vintage',
-    },
   ],
 };
 const About = () => {
@@ -120,21 +111,39 @@ const About = () => {
       <div className="aboutcontent">
         <h3 className="abouttitle">About Myself</h3>
         <p className="abouttext">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
-          ratione. Autem sunt, ipsam voluptates totam quis, asperiores similique
-          quisquam repudiandae aliquid officia alias voluptate minus nostrum?
-          Aliquam quod repudiandae omnis.
+          <TypeAnimation
+            sequence={[
+              `
+            Hi there! I'm a lover of travel, art, movies, football
+            (soccer), and coding. Whether I'm jet-setting to new
+            destinations, indulging in artistic expressions, escaping into
+            cinematic realms, cheering on my favorite team, or delving into the
+            world of technology, I'm fueled by curiosity, creativity, and
+            the thrill of discovery.
+            `,
+              400,
+              '',
+            ]}
+            repeat={Infinity}
+          />
         </p>
         <div className="connectsection">
           <p className="connecttext">LET&apos;S CONNECT</p>
           <ul className="sociallinks">
             <li className="linked">
-              <a href="https://twitter.com/OkariRooney" className="sociallink">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/OkariRooney"
+                className="sociallink"
+              >
                 <IoLogoTwitter color="#505F79" size={24} />
               </a>
             </li>
             <li className="linked">
               <a
+                target="_blank"
+                rel="noreferrer"
                 href="https://www.instagram.com/okari.rooney.nyandika/"
                 className="sociallink"
               >
@@ -142,7 +151,12 @@ const About = () => {
               </a>
             </li>
             <li className="linked">
-              <a href="mailto:nyandika15@icloud.com" className="sociallink">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="mailto:nyandika15@icloud.com"
+                className="sociallink"
+              >
                 <EmailIcon
                   size={24}
                   style={{
@@ -153,7 +167,9 @@ const About = () => {
             </li>
             <li className="linked">
               <a
-                href="https://api.whatsapp.com/send?phone=+254794152249"
+                target="_blank"
+                rel="noreferrer"
+                href="https://api.whatsapp.com/send?phone=0794152249"
                 className="sociallink"
               >
                 <IoLogoWhatsapp color="#505F79" size={24} />
