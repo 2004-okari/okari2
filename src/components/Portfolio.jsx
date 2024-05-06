@@ -222,7 +222,7 @@ const Portfolio = () => {
                         >
                           Live Preview
                         </p>
-                        <IoGlobeOutline color="#505F79" size={22} />
+                        <IoGlobeOutline className='hhhh' size={22} />
                       </a>
                     </button>
                   </div>
