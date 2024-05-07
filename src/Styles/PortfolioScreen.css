@@ -1,3 +1,4 @@
+/* stylelint-disable-next-line no-descending-specificity */
 .portfoliocontainer {
   background-color: #f5f7f8;
 
@@ -266,26 +267,6 @@
               background-color: #fff;
               border-radius: 8px;
 
-              &:hover {
-                background-color: #4053fc;
-                .mprojectlink {
-                  color: #fff;
-                }
-                .hhh {
-                  color: #fff;
-                }
-              }
-
-              &:active {
-                background-color: #2230d2;
-                .mprojectlink {
-                  color: #fff;
-                }
-                .hhh {
-                  color: #fff;
-                }
-              }
-
               .mprojectlink {
                 height: 100%;
                 text-decoration: none;
@@ -294,7 +275,30 @@
                 align-items: center;
                 justify-content: center;
                 gap: 6px;
-                
+              }
+
+              &:hover {
+                background-color: #4053fc;
+
+                .mprojectlink {
+                  color: #fff;
+                }
+
+                .hhh {
+                  color: #fff;
+                }
+              }
+
+              &:active {
+                background-color: #2230d2;
+
+                .mprojectlink {
+                  color: #fff;
+                }
+
+                .hhh {
+                  color: #fff;
+                }
               }
             }
           }
