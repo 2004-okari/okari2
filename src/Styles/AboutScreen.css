@@ -133,6 +133,7 @@
             height: 110px;
             gap: 6px;
             margin-right: 8px;
+
             &:hover {
               .textname {
                 display: none;
