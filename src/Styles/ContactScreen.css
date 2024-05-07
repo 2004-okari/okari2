@@ -6,7 +6,7 @@
   box-sizing: border-box;
   display: grid;
   place-items: center;
-  height: 750px;
+  height: 700px;
   border-top-left-radius: 10%;
 
   .contactcontent {
@@ -15,7 +15,7 @@
     background-image: url('../assets/images/contact.png');
     display: grid;
     place-items: center;
-    background-position: right;
+    background-position: center;
     background-size: cover;
     box-sizing: border-box;
     padding-top: 0;
