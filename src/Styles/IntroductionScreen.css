@@ -5,7 +5,11 @@
   height: 582px;
   display: grid;
   place-items: center;
-  cursor: url('../assets/images/cursintro.png'), auto;
+
+  /* background-image: url('../assets/images/14333.jpg');
+  background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover; */
 
   .introductioncontent {
     display: flex;
