@@ -1,5 +1,6 @@
 import React from 'react';
 import Portfolio from '../components/Portfolio';
+import Navigationtwo from '../components/Navigationtwo';
 
 const Page = () => (
   <div
@@ -9,6 +10,7 @@ const Page = () => (
       backgroundColor: '#f5f7f8',
     }}
   >
+    <Navigationtwo />
     <h1
       style={{
         fontFamily: 'Simonetta',
